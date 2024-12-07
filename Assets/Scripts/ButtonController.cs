@@ -7,6 +7,7 @@ public class ButtonController : MonoBehaviour
     [SerializeField] GameObject BMenu;
     [SerializeField] GameObject BResp;
     [SerializeField] GameObject BNext;
+    [SerializeField] GameObject Background;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
@@ -14,6 +15,7 @@ public class ButtonController : MonoBehaviour
         BResp.SetActive(false);
         BMenu.SetActive(false);
         BNext.SetActive(false);
+        Background.SetActive(false);
 
     }
 
@@ -23,6 +25,7 @@ public class ButtonController : MonoBehaviour
         BCont.SetActive(true);
         BResp.SetActive(true);
         BMenu.SetActive(true);
+        Background.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -32,6 +35,7 @@ public class ButtonController : MonoBehaviour
         BResp.SetActive(false);
         BMenu.SetActive(false);
         BNext.SetActive(false);
+        Background.SetActive(false);
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -41,6 +45,7 @@ public class ButtonController : MonoBehaviour
         BCont.SetActive(false);
         BResp.SetActive(false);
         BMenu.SetActive(false);
+        Background.SetActive(false);
         Time.timeScale = 1;
     }
     public void Menu()
@@ -49,6 +54,7 @@ public class ButtonController : MonoBehaviour
         BResp.SetActive(false);
         BMenu.SetActive(false);
         BNext.SetActive(false);
+        Background.SetActive(false);
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
@@ -66,6 +72,7 @@ public class ButtonController : MonoBehaviour
         BNext.SetActive(true);
         BResp.SetActive(true);
         BMenu.SetActive(true);
+        Background.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -75,6 +82,7 @@ public class ButtonController : MonoBehaviour
         BNext.SetActive(false);
         BResp.SetActive(false);
         BMenu.SetActive(false);
+        Background.SetActive(false);
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -85,6 +93,7 @@ public class ButtonController : MonoBehaviour
         BResp.SetActive(false);
         BMenu.SetActive(false);
         BNext.SetActive(false);
+        Background.SetActive(false);
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
